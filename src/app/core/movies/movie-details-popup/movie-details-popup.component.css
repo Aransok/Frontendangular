@@ -1,0 +1,50 @@
+.movie-details-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 95%;
+    max-height: 92%;
+    overflow-y: auto;
+    background-color: #181818;
+    padding: 20px;
+    border: 1px solid #383232;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: white;
+    
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    width: auto;
+    rotate: 45deg;
+  }
+  .close-icon:hover{
+    background-color: rgb(242, 65, 65);
+    color: black;
+  }
+  .popup-content {
+    text-align: left;
+  }
+  
+  
+  .popup-content img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+
+  }
+  iframe{
+    margin-top: 1em;
+    border-radius: 0.4em;
+  }

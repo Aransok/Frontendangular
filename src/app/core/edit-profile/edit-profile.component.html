@@ -1,0 +1,11 @@
+<div class="container" *ngIf="user">
+  <div class="profile-container">
+    <h2>{{ user.email }}'s Profile</h2>
+    <img src="../../../assets/pngegg.png" alt="" />
+    <p>Email: {{ user.email }}</p>
+    <button class="button" (click)="changePassword()">Change Password</button>
+    <button class="button delete-button" (click)="deleteAccount()">
+      Delete Account
+    </button>
+  </div>
+</div>

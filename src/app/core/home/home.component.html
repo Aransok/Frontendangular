@@ -1,0 +1,21 @@
+<div class="container">
+  <app-search></app-search>
+
+  <h3>Featured Movies</h3>
+  <div class="movie-list">
+    <div
+      *ngFor="let movie of movies"
+      class="movie"
+      (click)="openMovieDetails(movie)"
+    >
+    <img src="{{movie.Poster}}" alt="poster">
+
+      <h6 class="movie-title">{{ movie.Title }}</h6>
+    </div>
+  </div>
+</div>
+<app-movie-details-popup
+  *ngIf="selectedMovie"
+  [movie]="selectedMovie"
+  (close)="closeMovieDetails()"
+></app-movie-details-popup>

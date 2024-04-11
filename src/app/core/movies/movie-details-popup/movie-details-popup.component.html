@@ -1,0 +1,33 @@
+<div class="movie-details-popup">
+  <button class="close-icon" (click)="closeMovieDetails()">+</button>
+
+  <div class="popup-content">
+    <ng-container *ngIf="getYouTubeEmbedUrl(movie.Trailer)">
+      <iframe
+        #videoFrame
+        width="560"
+        height="315"
+        [src]="getYouTubeEmbedUrl(movie.Trailer)"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </ng-container>
+
+    <img
+      *ngIf="!getYouTubeEmbedUrl(movie.Trailer)"
+      src="{{ movie.Images[0] }}"
+      alt="{{ movie.Title }}"
+    />
+    <h2>{{ movie.Title }}</h2>
+    <p><strong>Year:</strong> {{ movie.Year }}</p>
+    <p><strong>Rated:</strong> {{ movie.Rated }}</p>
+    <p><strong>Released:</strong> {{ movie.Released }}</p>
+    <p><strong>Runtime:</strong> {{ movie.Runtime }}</p>
+    <p><strong>Genre:</strong> {{ movie.Genre }}</p>
+    <p><strong>Director:</strong> {{ movie.Director }}</p>
+    <p><strong>Writer:</strong> {{ movie.Writer }}</p>
+    <p><strong>Actors:</strong> {{ movie.Actors }}</p>
+    <p><strong>Plot:</strong> {{ movie.Plot }}</p>
+    <a *ngIf="movie?._id" [routerLink]="['/movies/', movie._id]">More Info</a>
+  </div>
+</div>

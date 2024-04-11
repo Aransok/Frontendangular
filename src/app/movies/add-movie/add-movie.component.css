@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(121, 18, 18, 0.5), rgba(0, 0, 0, 0.784)),url(../../core/images/RT_300EssentialMovies_700X250.jpg);
+    padding-bottom: 3rem;
+    padding-top: 10px;
+}
+.add-movie-container {
+    width: 400px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(10, 8, 8, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .add-movie-container label {
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-movie-container input,
+  .add-movie-container textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 18px);
+  }
+  
+  .add-movie-container button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-movie-container button:hover {
+    background-color: #f00;
+  }
+  
+  .add-movie-container p {
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  .add-movie-container span {
+    color: #f00;
+    cursor: pointer;
+  }
+  
+  .add-movie-container span:hover {
+    color: #7d6b6b;
+  }
+  
+  h2 {
+    color: white;
+  }
+  

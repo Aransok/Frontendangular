@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="add-movie-container">
+    <h2>Add Movie</h2>
+    <form [formGroup]="addMovieForm" (ngSubmit)="onSubmit()">
+      <label>Poster:</label>
+<input type="text" formControlName="Poster" />
+
+      <br/>  
+      <label>Trailer:</label>
+      <input type="text" formControlName="Trailer" />
+      <br />
+      <label>Title:</label>
+      <input type="text" formControlName="Title" />
+      <br />
+      <label>Year:</label>
+      <input type="text" formControlName="Year" />
+      <br />
+      <label>Rated:</label>
+      <input type="text" formControlName="Rated" />
+      <br />
+      <label>Released:</label>
+      <input type="text" formControlName="Released" />
+      <br />
+      <label>Runtime:</label>
+      <input type="text" formControlName="Runtime" />
+      <br />
+      <label>Genre:</label>
+      <input type="text" formControlName="Genre" />
+      <br />
+      <label>Director:</label>
+      <input type="text" formControlName="Director" />
+      <br />
+      <label>Writer:</label>
+      <input type="text" formControlName="Writer" />
+      <br />
+      <label>Actors:</label>
+      <input type="text" formControlName="Actors" />
+      <br />
+      <label>Plot:</label>
+      <textarea formControlName="Plot"></textarea>
+      <br />
+
+      <button type="submit">Add Movie</button>
+    </form>
+  </div>
+</div>

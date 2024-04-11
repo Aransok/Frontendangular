@@ -1,0 +1,77 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+    padding-bottom: 5em;
+    width: 100%; 
+}
+
+.movie-image {
+    margin-right: 15rem;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.movie-image img {
+    width: 80%;
+    height: auto; 
+    object-fit: contain; 
+}
+
+.movie-info {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 70%; 
+}
+
+.movie-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-info label {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.movie-info input,
+.movie-info textarea {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.movie-info button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-info button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.crud-options .delete {
+    background-color: red;
+}
+
+.crud-options .delete:hover {
+    background-color: rgba(159, 6, 6, 0.911);
+}

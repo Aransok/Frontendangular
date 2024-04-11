@@ -1,0 +1,19 @@
+.about-section, .team-section {
+    margin-bottom: 40px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .container{background-image:linear-gradient(rgba(121, 18, 18, 0.6), rgba(0, 0, 0, 2)),url(./../images/RT_300EssentialMovies_700X250.jpg);
+    min-height: 100vh;
+    color: white;
+}

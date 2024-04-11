@@ -1,0 +1,35 @@
+<div class="container" *ngIf="movie">
+  <div class="movie-image">
+    <img [src]="movie.Poster" alt="Movie Image" />
+  </div>
+  <div class="movie-info">
+    <form (submit)="onSubmit()">
+      <h2>Edit Movie</h2>
+      <label>Poster:</label>
+      <input type="text" name="poster" [(ngModel)]="editedMovie.Poster" required /><br />
+      <label>Trailer:</label>
+      <input type="text" name="trailer" [(ngModel)]="editedMovie.Trailer" required /><br />
+      <label>Title:</label>
+      <input type="text" name="title" [(ngModel)]="editedMovie.Title" required /><br />
+      <label>Year:</label>
+      <input type="text" name="year" [(ngModel)]="editedMovie.Year" required /><br />
+      <label>Rated:</label>
+      <input type="text" name="rated" [(ngModel)]="editedMovie.Rated" /><br />
+      <label>Released:</label>
+      <input type="text" name="released" [(ngModel)]="editedMovie.Released" /><br />
+      <label>Runtime:</label>
+      <input type="text" name="runtime" [(ngModel)]="editedMovie.Runtime" /><br />
+      <label>Genre:</label>
+      <input type="text" name="genre" [(ngModel)]="editedMovie.Genre" /><br />
+      <label>Director:</label>
+      <input type="text" name="director" [(ngModel)]="editedMovie.Director" /><br />
+      <label>Writer:</label>
+      <input type="text" name="writer" [(ngModel)]="editedMovie.Writer" /><br />
+      <label>Actors:</label>
+      <input type="text" name="actors" [(ngModel)]="editedMovie.Actors" /><br />
+      <label>Plot:</label>
+      <textarea name="plot" [(ngModel)]="editedMovie.Plot"></textarea><br />
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+</div>

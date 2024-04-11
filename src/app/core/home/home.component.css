@@ -1,0 +1,33 @@
+.container {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    background-image:linear-gradient(rgba(121, 18, 18, 0.6), rgba(0, 0, 0, 2)),url(./../images/RT_300EssentialMovies_700X250.jpg);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.1em;
+    padding-bottom: 20px;
+  }
+  
+  .movie {
+    
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .movie:hover{
+    transform: scale(1.003);
+    transition: transform 0.2s;
+    border: 1px solid rgb(49, 48, 48);
+    background-color: rgba(3, 3, 3, 0.518);
+  }
+  
+  .movie img {
+    max-width: 100%;
+    height: auto;
+  }
+  
